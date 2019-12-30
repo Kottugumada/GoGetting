@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/karthik/stringUtil"
+	stringutil "github.com/GoGetting/karthik/stringUtil"
 )
 
 func main() {
 	// fmt.Println("Hello Karthik")
-	fmt.Println(stringUtil.Reverse("!oG ,olleH"))
+	fmt.Println(stringutil.Reverse("!oG ,olleH"))
 }
