@@ -2,8 +2,7 @@ package main
 
 import (
 	"fmt"
-
-	stringutil "github.com/GoGetting/karthik/stringUtil"
+	"GoGetting/karthik/stringUtil"
 )
 
 func main() {
