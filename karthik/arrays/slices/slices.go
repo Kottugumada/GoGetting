@@ -22,4 +22,21 @@ func main() {
 	fmt.Println(e)
 	fmt.Println(f)
 
+	fmt.Printf("make function\n")
+	a1 := make([]int, 3)
+	fmt.Println(a1)
+	fmt.Printf("Slice of length= %v\n", len(a1))
+
+	a2 := make([]int, 3, 100)
+	fmt.Println(a2)
+	fmt.Printf("Slice of length= %v and the underlying array of capacity = %v\n", len(a2), cap(a2))
+
+	fmt.Printf("append capacity\n")
+	a3 := []int{}
+	fmt.Println(a3)
+	fmt.Printf("Slice of length= %v and the underlying array of capacity = %v\n", len(a3), cap(a3))
+
+	a3 = append(a3, 1)
+	fmt.Println(a3)
+	fmt.Printf("Slice of length= %v and the underlying array of capacity = %v\n", len(a3), cap(a3))
 }
