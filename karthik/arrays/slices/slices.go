@@ -39,4 +39,29 @@ func main() {
 	a3 = append(a3, 1)
 	fmt.Println(a3)
 	fmt.Printf("Slice of length= %v and the underlying array of capacity = %v\n", len(a3), cap(a3))
+
+	fmt.Printf("append variadic function\n")
+	a3 = append(a3, 2, 3, 4, 5)
+	fmt.Println(a3)
+	fmt.Printf("Slice of length= %v and the underlying array of capacity = %v\n", len(a3), cap(a3))
+
+	fmt.Printf("append variadic function using a spread operator\n")
+	a = append(a3, []int{7, 8, 9, 10}...) // spreads the slice out into individual operators
+	fmt.Println(a3)
+	fmt.Printf("Slice of length= %v and the underlying array of capacity = %v\n", len(a3), cap(a3))
+
+	fmt.Printf("push and pop operations\n")
+	c1 := []int{1, 2, 3, 4, 5}
+	d1 := c[1:]
+	fmt.Printf("remove the first element\n")
+	fmt.Println(c1)
+	fmt.Println(d1)
+	fmt.Printf("remove the last element\n")
+	e1 := c[:len(c1)-1]
+	fmt.Println(e1)
+
+	c2 := []int{1, 2, 3, 4, 5}
+	fmt.Printf("remove an element in the middle\n")
+	f1 := append(c2[:2], c2[3:]...)
+	fmt.Println(f1)
 }
